@@ -7,4 +7,4 @@
   URL="$1"
 
 # Execute main python entrypoint.
-  cd ../src && $PYTHON3 ./main.py $URL
+  cd "../src" && $PYTHON3 ./main.py $URL

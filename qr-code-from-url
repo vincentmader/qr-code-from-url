@@ -1,1 +1,8 @@
-bin/run
+#!/bin/sh
+
+# Define path to this repo's root directory.
+  PATH_TO_REPO=`dirname "$0"`
+  PATH_TO_REPO=`( cd "$PATH_TO_REPO" && pwd )`
+
+# Enter `./bin` directory & run script.
+cd "$PATH_TO_REPO/bin" && ./run "$1"
