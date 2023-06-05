@@ -8,3 +8,5 @@ qr-code-from-url https://mader.xyz
 #+end_src
 
 The resulting image file will then be saved to the `./out` directory.
+
+[[./out/https:__mader.xyz.png]]
