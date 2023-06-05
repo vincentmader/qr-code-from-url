@@ -1,5 +1,5 @@
 test:
-	cd ./bin && ./run "https://georgs-punkte.de"
+	cd ./bin && ./run "https://v1.mader.xyz"
 run:
 	cd ./bin && ./run
 setup:
