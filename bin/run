@@ -3,5 +3,8 @@
 # Define path to python executable (in virtual environment).
   PYTHON3="../.venv/bin/python3"
 
+# Get URL from command line argument.
+  URL="$1"
+
 # Execute main python entrypoint.
-  cd ../src && $PYTHON3 ./main.py
+  cd ../src && $PYTHON3 ./main.py $URL
