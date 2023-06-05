@@ -4,7 +4,7 @@ This CLI utility can be used to generate QR code image files from text. It is bu
 
 If, for example, you'd like to generate a QR code for the URL "https://mader.xyz", you could use this utility in the following way:
 #+begin_src shell
-qr-code-from-url https://mader.xyz
+./qr-code-from-url https://mader.xyz
 #+end_src
 
 The resulting image file will then be saved to the `./out` directory.
