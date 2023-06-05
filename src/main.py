@@ -1,5 +1,6 @@
-from pathlib import Path
+import os
 import sys
+from pathlib import Path
 
 import qrcode
 import qrcode.image.svg
@@ -20,9 +21,13 @@ def main():
     # Generate QR code image.
     img = qrcode.make(url)
     # Define path to QR code image file. 
+    path_to_out_dir = Path("..", "out")
     filename = url.replace('/', '_')
     filename = f"{filename}.png"
-    path_to_file = Path("..", "out", filename)
+    path_to_file = Path(path_to_out_dir, filename)
+    # Make sure the directory `../out` exists.
+    if not os.path.exists(path_to_out_dir):
+        os.mkdir(path_to_out_dir)
     # Save QR code image to disk.
     with open(path_to_file, "wb") as qr:
         img.save(qr)
